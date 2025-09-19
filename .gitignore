@@ -1,0 +1,54 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pycache/
+*.env
+*.venv
+env/
+venv/
+*.egg-info/
+*.egg
+
+# ---------------------------
+# Jupyter / Notebooks
+# ---------------------------
+.ipynb_checkpoints
+*.ipynb
+
+# ---------------------------
+# Logs
+# ---------------------------
+*.log
+
+# ---------------------------
+# Spark
+# ---------------------------
+spark-warehouse/
+*.snappy.parquet
+*.parquet
+*.orc
+
+# ---------------------------
+# Sistema operacional
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Dados (opcional)
+# ---------------------------
+raw/*.csv
+raw/*.json
+silver/notebooks/*.csv
+gold/*.csv
+
+# ---------------------------
+# Docker
+# ---------------------------
+docker-compose.override.yml
+*.pid
+*.sock

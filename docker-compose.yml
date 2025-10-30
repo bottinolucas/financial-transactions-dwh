@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: transactions
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
@@ -22,17 +22,6 @@ services:
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
       - "5050:80"
-    depends_on:
-      - postgres
-    restart: unless-stopped
-
-  notebook:
-    build: .
-    container_name: dw_notebook
-    volumes:
-      - .:/app
-    ports:
-      - "8888:8888"
     depends_on:
       - postgres
     restart: unless-stopped

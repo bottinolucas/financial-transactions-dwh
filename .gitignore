@@ -56,3 +56,6 @@ docker-compose.override.yml
 # brModelo
 # ---------------------------
 *.brM3
+
+*.json
+*.csv

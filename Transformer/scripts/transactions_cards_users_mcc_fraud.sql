@@ -1,4 +1,7 @@
-CREATE TABLE IF NOT EXISTS transactions_cards_users_mcc_fraud (
+-- SCHEMA SILVER
+CREATE SCHEMA IF NOT EXISTS silver;
+
+CREATE TABLE IF NOT EXISTS silver.transactions_cards_users_mcc_fraud (
 	transaction_id BIGINT NOT NULL,
 	date TIMESTAMP NOT NULL,
 	client_id BIGINT NOT NULL,
